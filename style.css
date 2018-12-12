@@ -1,0 +1,313 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url(IMG/fondo.jpg);
+  background-size: cover;
+}
+
+.header-contenedor {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+.header-contenedor .imagen-contenedor {
+  width: 80px;
+  height: 80px;
+  padding-right: 1rem;
+}
+.header-contenedor .imagen-contenedor img {
+  width: 100%;
+  margin-left: 0.6rem;
+  padding-right: 1rem;
+}
+.header-contenedor h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  margin-top: 1.5rem;
+}
+
+.ingreso-producto-precio {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+.ingreso-producto-precio span {
+  font-weight: bold;
+}
+.ingreso-producto-precio input {
+  margin-top: 0.4rem;
+  margin-bottom: 0.7rem;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.ingreso-producto-precio .boton-cargar {
+  display: flex;
+  justify-content: flex-end;
+}
+.ingreso-producto-precio .boton-cargar button {
+  background-color: #cc0052;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+.ingreso-producto-precio #inputs-incompletos {
+  display: none;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.lista-compra-container {
+  display: none;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+.lista-compra-container .lista-compra li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lista-compra-container .lista-compra li button {
+  background-color: #cc0052;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+.lista-compra-container #subtotal-a-pagar {
+  margin-top: 1rem;
+  font-weight: bold;
+  background-color: #dad6d8;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.metodo-de-pago {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  font-weight: bold;
+}
+.metodo-de-pago p {
+  margin-bottom: 1rem;
+}
+.metodo-de-pago .botones-pago {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.metodo-de-pago .botones-pago button {
+  background-color: #cc0052;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 9px 5px;
+  width: 78%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 6px 2px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+.metodo-de-pago #total-a-pagar {
+  display: none;
+  background-color: #dad6d8;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.ventana-cuotas {
+  display: none;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+.ventana-cuotas p {
+  font-weight: bold;
+}
+.ventana-cuotas input[type=checkbox] {
+  margin-bottom: 1rem;
+}
+.ventana-cuotas .boton-calcular {
+  background-color: #cc0052;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 1px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+.ventana-cuotas .total-recargo {
+  display: none;
+  background-color: #dad6d8;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  margin-top: 0.7rem;
+}
+.ventana-cuotas .total-recargo .recargo-mensaje-uno {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  font-size: 14px;
+}
+.ventana-cuotas .total-recargo .recargo-mensaje-dos {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  font-size: 16px;
+}
+
+.boton-pagar {
+  display: none;
+  width: 80%;
+  margin: auto;
+}
+.boton-pagar .pagar {
+  background-color: #cc0052;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  width: 100%;
+  padding: 11px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 11px 2px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.contestadora-tel {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+.contestadora-tel p {
+  color: #cc0052;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.contestadora-tel button {
+  background-color: #e2e1e1;
+  border: none;
+  color: #000000;
+  border-radius: 4px;
+  width: 100%;
+  padding: 11px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.modal .modal-container p {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .header-contenedor {
+    justify-content: space-around;
+  }
+  .header-contenedor .imagen-contenedor {
+    width: 90px;
+    height: 90px;
+  }
+
+  .ingreso-producto-precio {
+    width: 45%;
+    margin: auto;
+  }
+
+  .lista-compra-container {
+    width: 45%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .lista-compra-container .lista-compra li {
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  .lista-compra-container #subtotal-a-pagar {
+    width: 64%;
+    margin: auto;
+  }
+
+  .metodo-de-pago {
+    width: 45%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .metodo-de-pago .botones-pago button {
+    width: 24%;
+  }
+
+  .ventana-cuotas {
+    width: 45%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .ventana-cuotas .boton-calcular {
+    width: 32%;
+    margin-left: 26rem;
+  }
+  .ventana-cuotas .total-recargo .recargo-mensaje-uno {
+    font-size: 16px;
+  }
+  .ventana-cuotas .total-recargo .recargo-mensaje-dos {
+    font-size: 18px;
+  }
+
+  .boton-pagar {
+    width: 48%;
+    margin: auto;
+  }
+
+  .contestadora-tel {
+    width: 45%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .contestadora-tel button {
+    width: 49%;
+    font-size: 16px;
+  }
+  .contestadora-tel .buton-salir {
+    width: 99%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
