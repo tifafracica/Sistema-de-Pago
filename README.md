@@ -22,3 +22,5 @@ Como ejemplo si alguien ingresa como monto 1000 le queda a abonar en
 12 cuotas	100 
 24 cuotas	60,41 
 36 cuotas	47,22 
+
+Hecho con :heart: por @tifafracica
